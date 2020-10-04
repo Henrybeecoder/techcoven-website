@@ -1,0 +1,822 @@
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 350px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: darkblue; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+  body {
+    background: rgb(245, 247, 250);
+  }
+
+  /* Customize the label (the container) */
+.cono {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 0 0 12px 190px ;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+/* Hide the browser's default checkbox */
+.cono input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.cono:hover input ~ .checkmark {
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cono input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cono input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.cono .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  
+ .ht h4 {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: .5rem;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+  
+ .ht h3 {
+  color: #616e7c;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  width: 100%;
+ line-height: 20px;
+ }
+  /* Style page content */
+  .main {
+    margin-left: 100px;
+    padding: 0px 40px;
+    background: rgb(245, 247, 250);
+  
+    height: 150vh;
+    position: relative;
+  
+   
+
+  }
+
+  .container {
+    width: 60%;
+    background: white;
+    height: 150vh;
+ position: absolute;
+    left: 30%;
+    top: 10%;
+    border-radius: 7px;
+  }
+
+ 
+
+  .logo {
+    width: 35%;
+    margin: 0 0 0 30px;
+  }
+
+  .col1 {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 40px 10px 40px;
+    
+    
+    
+   
+  }
+
+  .pic {
+    width: 30%;
+  }
+  .pic0 {
+    width: 10%;
+  }
+  .pic6 {
+    width: 10%;
+  }
+
+  
+
+  header {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+        
+   
+  }
+
+ 
+  .ht {
+ 
+    
+    width: 81%;
+   
+  }
+  
+  .headerhr{
+  border: 1px solid #a7b0bb;
+   width: 90%;
+    margin: auto; 
+    margin-top: 3%;
+     margin-bottom: 5%;
+}
+
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 20px 20px;
+  margin: 8px 0 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+ margin: 0 0 30px 0;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+
+input[type=text], input[type=password] {
+  outline: none;
+}
+
+
+.masterdiv {
+ position: relative;
+  height: 20vh;
+ 
+  
+  width: 100%;
+}
+
+.div1 {
+  width: 50%;
+  margin: 0 0 0 30px;
+ 
+ 
+}
+
+.div2 {
+  width: 50%;
+  position: absolute;
+  top: 0%;
+  right: -1%;
+ 
+}
+
+
+.trustedtext {
+  font-size: 20px;
+  font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 20px;
+    color: #47a3f3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fullname, .password {
+  color: #a7b0bb;
+  font-size: 14px;
+  display: inline-block;
+    margin-bottom: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tandp {
+  color: #a7b0bb;
+ 
+  margin-right: 200px;
+  display: block;
+    position: relative;
+    padding-left: 2px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.register {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  margin: 0 0 0 190px;
+ border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 7px;
+  font-family:  Arial, Helvetica, sans-serif
+}
+
+.register:hover {
+  background-color: rgb(255, 123, 0);
+}
+ hr {
+  border: 1px solid #000; width: 20%; margin: auto; margin-top: 3%; margin-bottom: 5%;
+ }
+
+
+ .mic {
+  display: flex;
+  margin: 0 75px 0 75px;
+}
+.otherlogin {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  
+  text-align: center;
+  margin: 0 170px 0 170px;
+
+
+}
+.con1, .con2, .con3 {
+  border: 1px solid blue;
+    width: 10%;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.con1, .con2, .con3:hover {
+cursor: pointer;
+}
+.cona{
+  width: 40%;
+}
+.conb{
+  width: 60%;
+}
+
+.conc{
+width: 80%;
+}
+
+a {
+  text-decoration: underline;
+  font-size: 15px;
+  color: #007bff;
+  font-family: ariel;
+}
+a:hover {
+   color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .con1, .con2, .con3 {
+    border: 1px solid blue;
+    width: 10%;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 0 0 10px 0;
+  }
+  
+  .otherlogin {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0 0;
+    height: 35vh;
+  }
+  .headerhr {
+    width: 100%;
+    margin: 0 0 20px 0;
+    
+    
+  }
+  .tandp {
+    margin: 0 0 0 0;
+    font-size: 18px;
+  }
+  .register {
+    margin: 30px 0 0 80px;
+  }
+  .container {
+    width: 100%;
+    
+    margin: 0 0 0 0;
+  }
+
+  input[type=text], input[type=password] {
+    width: 80%;
+    margin: 0 0 0 0;
+  }
+  .sidenav {
+    display: none;
+  }
+  .container {
+   top: 5%;
+   left: 1%;
+    width: 100%;
+    
+  }
+  .main {
+    margin-left: 0;
+  }
+
+  .masterdiv {
+  
+     margin-bottom: 20%;
+     position: relative;
+     height: 25vh;
+  }
+ .div1 {
+   width: 99%;
+  
+   margin: 0 0 0 0;
+ }
+   
+.div2 {
+width: 100%;
+top: 70%;
+
+
+}
+header {
+  height: 30vh;
+}
+
+.cono {
+ 
+  margin: 0 60px  0 60px;
+  height: 20vh;
+
+ 
+}
+
+.mic {
+  margin: 0 20px 0 20px;
+  color: #a7b0bb;
+}
+hr {
+  border: 1px solid #a7b0bb; 
+  width: 10%; 
+  margin: auto; margin-top: 10%; margin-bottom: 5%;
+  height: 0;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width: 500px) and (max-width: 1000px) {
+  /* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 350px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: darkblue; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+body {
+  background: rgb(245, 247, 250);
+}
+
+/* Customize the label (the container) */
+.cono {
+display: block;
+position: relative;
+padding-left: 35px;
+margin: 0 0 12px 160px ;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+
+
+
+}
+
+/* Hide the browser's default checkbox */
+.cono input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.cono:hover input ~ .checkmark {
+background-color: white;
+border: 1px solid black;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cono input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.cono input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.cono .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.ht h4 {
+font-weight: 400;
+font-size: 26px;
+margin-bottom: .5rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.ht h3 {
+color: #616e7c;
+font-size: 13px;
+font-weight: 400;
+font-family: Arial, Helvetica, sans-serif;
+
+width: 100%;
+line-height: 20px;
+}
+/* Style page content */
+.main {
+  margin-left: 100px;
+  padding: 0px 40px;
+  background: rgb(245, 247, 250);
+
+  height: 150vh;
+  position: relative;
+
+ 
+
+}
+
+.container {
+  width: 90%;
+  background: white;
+  height: 150vh;
+position: absolute;
+ 
+  top: 10%;
+  border-radius: 7px;
+}
+
+
+
+.logo {
+  width: 35%;
+  margin: 0 0 0 30px;
+}
+
+.col1 {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 40px 10px 40px;
+  
+  
+  
+ 
+}
+
+.pic {
+  width: 30%;
+}
+.pic0 {
+  width: 10%;
+}
+.pic6 {
+  width: 10%;
+}
+
+
+
+header {
+  height: 25vh;
+  display: flex;
+  justify-content: space-around;
+      
+ 
+}
+
+
+.ht {
+
+  
+  width: 81%;
+ 
+}
+
+.headerhr{
+border: 1px solid #a7b0bb;
+ width: 100%;
+  margin: auto; 
+  margin-top: 3%;
+   margin-bottom: 5%;
+}
+
+
+input[type=text], input[type=password] {
+width: 70%;
+padding: 20px 20px;
+margin: 8px 0 10px;
+display: inline-block;
+border: 1px solid #ccc;
+margin: 0 0 30px 0;
+border-radius: 5px;
+border: 1px solid gray;
+}
+
+
+input[type=text], input[type=password] {
+outline: none;
+}
+
+
+.masterdiv {
+position: relative;
+height: 20vh;
+
+margin-bottom: 5%;
+width: 100%;
+}
+
+.div1 {
+width: 50%;
+margin: 0 0 0 30px;
+
+
+}
+
+.div2 {
+width: 50%;
+position: absolute;
+top: 0%;
+right: -1%;
+
+}
+
+
+.trustedtext {
+font-size: 20px;
+font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  position: relative;
+  right: 20px;
+  color: #47a3f3;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fullname, .password {
+color: #a7b0bb;
+font-size: 14px;
+display: inline-block;
+  margin-bottom: .5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tandp {
+color: #a7b0bb;
+
+margin-right: 200px;
+display: block;
+  position: relative;
+  padding-left: 2px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+.register {
+font-size: 15px;
+font-weight: 500;
+background-color: #007bff;
+color: white;
+padding: 15px 20px;
+margin: 0 0 0 160px;
+border: none;
+cursor: pointer;
+width: 50%;
+border-radius: 7px;
+font-family:  Arial, Helvetica, sans-serif
+}
+
+.register:hover {
+background-color: rgb(255, 123, 0);
+}
+hr {
+border: 1px solid  #a7b0bb; 
+width: 20%;
+ margin: auto; 
+ margin-top: 6%;
+  margin-bottom: 5%;
+}
+
+
+.mic {
+display: flex;
+margin: 0 120px 0 120px;
+color:  #a7b0bb;
+
+}
+.otherlogin {
+display: flex;
+height: 10vh;
+align-items: center;
+justify-content: space-around;
+width: 70%;
+flex-direction: row;
+text-align: center;
+margin: 0 170px 0 100px;
+
+
+}
+.con1, .con2, .con3 {
+border: 1px solid blue;
+  width: 15%;
+border-radius: 5px;
+padding: 5px 10px;
+}
+.con1, .con2, .con3:hover {
+cursor: pointer;
+}
+.cona{
+width: 40%;
+}
+.conb{
+width: 60%;
+}
+
+.conc{
+width: 80%;
+}
+
+a {
+text-decoration: underline;
+font-size: 15px;
+color: #007bff;
+font-family: ariel;
+}
+a:hover {
+ color: darkblue;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
